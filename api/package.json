@@ -1,0 +1,21 @@
+{
+  "name": "afrisource-email-api",
+  "version": "1.0.0",
+  "description": "Azure Function — sends sourcing request emails via Resend",
+  "main": "dist/src/functions/sendEmail.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && func start",
+    "prestart": "npm run build"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.7.0",
+    "resend": "^4.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "@types/node": "^22.0.0"
+  }
+}
